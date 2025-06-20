@@ -117,8 +117,13 @@ function randomNumber(min,max)
 
 
 
-const counts = [0,0,0,0,0,0,0,0,0,]
- for (let i=0; i<100000; i++) {console.log(Math.random(0,9))}; 
+ const randomString = '584hgs5fasd584aef'
+  const varray = randomString.split('');
+    
+  console.log(varray);
+
+const counts = [0,0,0,0,0,0,0,0,0,0]
+ for (let i=1; i<varray; i++) {console.log(Math.random())}; 
 const index = randomNumber(0,9)
 counts[index]++
-console.log(counts)
+console.log(counts); 

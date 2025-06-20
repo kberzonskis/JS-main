@@ -1281,7 +1281,7 @@ for (let i = 20; i >= 15; i--){
 
 
 
-
+/*
 
 // 1. Parašykite funkciją, kuri grąžina dviejų skaičių sumą.
 let am=3
@@ -1296,7 +1296,7 @@ let rezult =0
 
 /*
 2. Parašykite funkciją, kuri grąžina dviejų skaičių skirtumą. */
-
+/*
 let v12 = 15 
 let v11 = 23
 
@@ -1309,7 +1309,7 @@ return [rezult-15];
 } console.log(jim(v12,v11));
 
 
-/* 3. Parašykite funkciją, kuri grąžina dviejų skaičių sandaugą. */ 
+/* 3. Parašykite funkciją, kuri grąžina dviejų skaičių sandaugą.
 let vg = 98 
 let gv =89
 
@@ -1318,20 +1318,20 @@ let rezult = 0
 rezult = a*b 
 return {rezult}
 
-} console.log(Jimj(vg,gv));
+} console.log(Jimj(vg,gv)); */ 
 
 /*Funkcijos 
 
 
 6. Parašykite funkciją, kuri patikrina, ar skaičius yra teigiamas.
 
-*/ 
+
 let go = -1
 
 function Jimy(dib) { if (dib>0) return 'tegiamas'; else return 'neigiamas'} 
-console.log(Jimy(go));
+console.log(Jimy(go));*/ 
 
-// 10. Parašykite funkciją, kuri patikrina, ar skaičius yra lygus 100   
+/* 10. Parašykite funkciją, kuri patikrina, ar skaičius yra lygus 100   
 let zyp = 99 
 function zy(simtas)
 { if (simtas===100) return  `skaicius lygus 100`; else return `skaicius nera lygus 100`} 
@@ -1385,6 +1385,7 @@ b. Skaičius yra neigiamas, išveda į console ‘esu neigiamas’
 c. Skaičius yra nulis, išveda į console ‘esu nulis’ 
 d. Skaičius yra didesnis už 100, išveda ‘didžiulis skaičius’ 
 e. Jei skaičius nėra didesnis už 100, išveda ‘esu mažiukas */
+/*
 
 let skd = 60
 
@@ -1699,7 +1700,7 @@ if (arr[i] < 0) console.log(true); else return (false);
 
 }  */
 
-
+/*
 console.log('--5--');
 
 
@@ -2427,6 +2428,8 @@ console.log(anagram('Hello', 'World'));
 
 
 /* ● Parašykite funkciją, kuri pašalina dublikatus iš masyvo. */
+/*
+
 const arrys = [1, 2, 3, 4, 5, 1, 2, 3, 4, 5];
 
 const removeDuplicates = (arrys) => { 
@@ -2515,3 +2518,94 @@ tarpų.
 ● Parašykite funkciją, kuri apskaičiuoja visų teigiamų skaičių sumą masyve. 
 
 */
+
+/*
+const randomString = '584hgs5fasd584aef';
+
+const randomNumber = (Math.random()* randomString); // Generates a random number between 0 and 1 
+
+
+console.log(randomNumber);
+
+
+const counts = [0,0,0,0,0,0,0,0,0,]
+ for (let i=0; i<100000; i++) {console.log(Math.random(0,9))}; 
+
+
+
+
+ const index = randomNumber(0,9)
+counts[index]++
+console.log()
+
+
+
+
+const randomString = '584hgs5fasd584aef'
+for (let i=0; i<15; i++) {console.log(Math.random() * randomString.length);}; 
+
+
+function randomNumber(min,max) 
+ { return Math.floor(Math.random() * (max - min) +min); }
+    
+ console.log(randomNumber('hfg', 'hf88dhg'));
+ console.log(randomNumber(1,10))
+ console.log(randomNumber(1,10))
+
+
+  
+
+ const randomString = '584hgs5fasd584aef'
+
+const randomNumber = (Math.random() * randomString.length); // Generates a random number between 0 and 1
+console.log(randomNumber.typeof);
+*/
+
+/*
+function randomNumber('') 
+ { return Math.floor(Math.random() * (max - min +1) +min); }
+    
+ console.log(randomNumber(1,10))
+ console.log(randomNumber(1,10))
+ console.log(randomNumber(1,10)) */ 
+ 
+
+  const randomString = '584hgs5fasd584aef'
+  const varray = randomString.split('');
+    console.log(varray);
+
+    
+  for (let i = 1;  i < varray.length; i++) {
+     
+  
+  console.log(varray[i]);
+
+
+  } 
+// program to generate random strings
+
+// declare all characters
+
+const characters1 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxtz';
+const characters2 =   '!@#$%^&*()_+?:{}[]';
+const characters3 ='0123456789';
+const characters = characters1 + characters2 + characters3;
+
+function generateString(length) {
+    
+    let result = ' ';
+    const charactersLength = characters.length;
+    for ( let i = 0; i < length; i++ ) {
+        result += characters.charAt(Math.floor(Math.random() * characters.length));
+    }
+
+    return result;
+}
+
+console.log(generateString(10));
+
+
+
+  
+  // console.log( Math.floor( Math.random() + varray)); // Generates a random number between 0 and 1
+  
